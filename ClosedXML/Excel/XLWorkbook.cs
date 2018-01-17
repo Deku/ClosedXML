@@ -157,11 +157,6 @@ namespace ClosedXML.Excel
         /// </summary>
         public static XLCellSetValueBehavior CellSetValueBehavior { get; set; }
 
-        public static XLWorkbook OpenFromTemplate(String path)
-        {
-            return new XLWorkbook(path, true);
-        }
-
         #endregion Static
 
         internal readonly List<UnsupportedSheet> UnsupportedSheets =
@@ -720,12 +715,6 @@ namespace ClosedXML.Excel
         public XLWorkbook()
             :this(XLEventTracking.Enabled)
         {
-        }
-
-        internal XLWorkbook(String file, Boolean asTemplate)
-            : this(XLEventTracking.Enabled)
-        {
-            LoadSheetsFromTemplate(file);
         }
 
         public XLWorkbook(XLEventTracking eventTracking)
