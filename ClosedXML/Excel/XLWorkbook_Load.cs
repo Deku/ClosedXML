@@ -717,7 +717,7 @@ namespace ClosedXML.Excel
                                                         .Distinct().ToList();
 
                                             pivotValue.BaseField = col.FirstCell().GetValue<string>();
-                                            if (df.BaseItem != null) pivotValue.BaseItem = items[(int)df.BaseItem.Value].ToString();
+                                            if (df.BaseItem != null && (int)df.BaseItem.Value > 0 && (int)df.BaseItem.Value < items.Count) pivotValue.BaseItem = items[(int)df.BaseItem.Value].ToString();
                                         }
                                     }
                                 }
