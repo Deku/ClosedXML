@@ -430,7 +430,7 @@ namespace ClosedXML.Excel
             LoadDefinedNames(workbook);
 
             #region Pivot tables
-
+            /*
             // Delay loading of pivot tables until all sheets have been loaded
             foreach (Sheet dSheet in sheets.OfType<Sheet>())
             {
@@ -793,7 +793,7 @@ namespace ClosedXML.Excel
                     }
                 }
             }
-
+            */
             #endregion
         }
 
