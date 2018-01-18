@@ -1,4 +1,4 @@
-## Disclaimer: _This is a continuation of ClosedXML v0.87.1 with support for .Net Framework 4.0, since it's support was dropped in v0.88.0-beta1. This is for personal use (yes, old code), but feel free to take it. Every change will be released as patch -> 0.87.XX_
+## Disclaimer: _This is a continuation of ClosedXML with support for .Net Framework 4.0, since it's support was dropped in v0.88.0-beta1. This is for personal use (yes, old code), but feel free to take it.
 
 
 
